@@ -33,7 +33,6 @@ class Solution:
         r=len(nums)-1#右区间是闭区间
         while l<=r:#这里是"<="
             mid=l+(l-r)//2#防止溢出
-	    mid=l+(r-l)
             if nums[mid]<target:
                 l=mid+1
             elif nums[mid]>target:
@@ -50,7 +49,6 @@ class Solution:
         r=len(nums)#右区间是开区间
         while l<r:#这里是"<"
             mid=l+(l-r)//2#防止溢出
-	    mid=l+(r-l)
             if nums[mid]<target:
                 l=mid+1
             elif nums[mid]>target:
@@ -61,8 +59,7 @@ class Solution:
 ```
 **中间指针(middle)实现的代码小技巧**
 
-在构造中间指针时，通常代码都写为```Python middle=(left+right)//2```
-但其实```middle = left + (right - left) // 2```这种写法可以避免内存溢出
+在构造中间指针时，通常我会习惯将代码写成```middle=(left+right)//2```，但其实```middle = left + (right - left) // 2```这种写法可以避免内存溢出。
 
 
 ### 《代码随想录》数组：移除元素
