@@ -200,3 +200,76 @@ main()
 	- 差分数组是前缀和的逆操作，用于快速构建区间更新操作。
 	- 场景：在大规模数据中，需要快速对多个区间的值同时进行加减操作。
 
+### 《代码随想录》数组：开发商购买土地
+#### 任务要求
+#### 44. 开发商购买土地（第五期模拟笔试）
+
+题目链接：https://www.programmercarl.com/kamacoder/0044.%E5%BC%80%E5%8F%91%E5%95%86%E8%B4%AD%E4%B9%B0%E5%9C%9F%E5%9C%B0.html 
+
+题目建议：希望大家 也做一个自己 对数组专题的总结
+文章链接：https://programmercarl.com/%E6%95%B0%E7%BB%84%E6%80%BB%E7%BB%93%E7%AF%87.html
+##### 重要知识点
+- 二维数组的构造与区间和
+- 最小差距的计算
+- 优化与注意事项
+
+**二维数组的构造与区间和**
+
+1. **二维数组构造**：- 使用 `grid.append(tmp)` 逐行存储输入数据，构造二维数组。
+2. **水平和竖直区间和**：
+	- 水平区间和：`horArr[i] = sum(grid[i])`，表示第 `i` 行的总和。
+	- 竖直区间和：通过遍历每列累加元素，存储为 `verArr`。
+
+**最小差距的计算**
+
+1. **差值公式**：
+	- 差值计算公式：`sum(row_arr) - 2 * horizontalCut`，避免重复计算，快速获得两个区域的差值。
+2. **绝对值处理**：
+	- 使用 `abs` 确保差值为正，找到最小绝对差距。
+3. **水平和竖直最小差距**: 
+	- 遍历行（或列），累加当前切割区域和，实时更新最小差距。
+
+```Python 
+def main():
+    n,m = map(int, input().split())
+    
+    grid=[]#二维矩阵 
+    res=float('inf')#最小差距
+    
+    #输入二维矩阵的值
+    for _ in range(n):
+        tmp=list(map(int,input().strip().split()))
+        grid.append(tmp)
+    
+    #构造水平方向区间和
+    horArr=[]
+    for i in range(0,n):#遍历行
+        horArr.append(sum(grid[i]))
+        
+    #构造竖直方向区间和
+    verArr=[]
+    for i in range(0,m):#遍历列
+        tmp=0
+        for j in range(0,n):#遍历行
+            tmp+=grid[j][i]
+        verArr.append(tmp)
+    
+    #找到水平最小差距
+    horCut=0
+    for i in range(n):
+        horCut+=horArr[i]
+        res=min(res,abs(sum(horArr)-2*horCut))
+    
+    #找到竖直最小差距
+    verCut=0
+    for j in range(m):
+        verCut+=verArr[j]
+        res=min(res,abs(sum(verArr)-2*verCut))
+    print(res)
+    
+main()
+```
+
+**优化与注意事项**
+- 简化数据构造，减少不必要的嵌套操作。
+- 利用前缀和和公式优化，提升效率。
