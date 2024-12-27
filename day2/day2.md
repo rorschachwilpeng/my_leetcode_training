@@ -29,7 +29,7 @@
  1. 计算当前窗口长度，更新最小子数组长度（全局最小值）。
  2. 减去当前慢指针对应的值（缩小窗口），再移动慢指针。
 
-
+**代码**
 ```Python 
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
@@ -154,7 +154,7 @@ class Solution:
 	   arr[r]
 
 
-**代码中的前缀和实现**
+**代码**
 ```Python 
 import sys
 def main():
@@ -229,6 +229,7 @@ main()
 3. **水平和竖直最小差距**: 
 	- 遍历行（或列），累加当前切割区域和，实时更新最小差距。
 
+**代码**
 ```Python 
 def main():
     n,m = map(int, input().split())

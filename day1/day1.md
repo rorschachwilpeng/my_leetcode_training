@@ -80,6 +80,7 @@ class Solution:
 **双指针 --> 快慢指针**
 构造快慢指针，两个指针值都代表索引，快指针比慢指针走得快（废话），快指针在前面读，读到目标值就跳过（依题意），否则加入到数组中。加入时的索引即快指针的值。
 
+**代码**
 ```Python 
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
@@ -120,6 +121,7 @@ class Solution:
 
 由于数组元素是非递减顺序，可能包含负数，平方后顺序会改变。通过对向双指针，左指针从数组起点，右指针从终点开始，比较两端平方值，将较大的值按逆序放入结果数组，然后移动对应指针，最终得到按非递减顺序排列的平方值数组。
 
+**代码**
 ```Python 
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:

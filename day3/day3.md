@@ -41,7 +41,8 @@
 - `cur = cur.next` 逻辑：仅改变 `cur` 的指针指向，不会修改链表结构。
 
 - `cur.next = cur.next.next` 逻辑：修改了链表节点的 `next` 指针，跳过当前节点，直接影响链表结构。
-		
+
+**代码**		
 ```Python 
 # Definition for singly-linked list.
 # class ListNode:
@@ -73,6 +74,7 @@ class Solution:
 ##### 重要知识点
 ～
 
+**代码**
 ```Python 
 class ListNode:
     def __init__(self,val=0,next=None):
@@ -153,6 +155,8 @@ class MyLinkedList:
 **双指针思想**
 
 构造两个指针，一前一后，初始位置分别是`None`和`head`。两个指针从左往右进行移动，每次移动前需缓存下一个节点指针，然后翻转当前两个指针，再更新双指针的位置。最后当‘后指针’遍历到末尾`None`位置时，返回'前指针'即翻转链表。
+
+**代码**
 ```Python 
 # Definition for singly-linked list.
 # class ListNode:
