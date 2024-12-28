@@ -32,7 +32,7 @@ class Solution:
         l=0
         r=len(nums)-1#右区间是闭区间
         while l<=r:#这里是"<="
-            mid=l+(l-r)//2#防止溢出
+            mid=l+(r-l)//2#防止溢出
             if nums[mid]<target:
                 l=mid+1
             elif nums[mid]>target:
@@ -48,7 +48,7 @@ class Solution:
         l=0
         r=len(nums)#右区间是开区间
         while l<r:#这里是"<"
-            mid=l+(l-r)//2#防止溢出
+            mid=l+(r-l)//2#防止溢出
             if nums[mid]<target:
                 l=mid+1
             elif nums[mid]>target:
