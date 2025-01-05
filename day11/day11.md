@@ -128,7 +128,7 @@ class Solution:
             que.push(nums[i])
         res.append(que.getMax())
         for i in range(k,size):
-            que.pop(nums[k-i])#窗口左边界右移
+            que.pop(nums[i-k])#窗口左边界右移
             que.push(nums[i])#窗口右边界右移
             res.append(que.getMax())
         return res
