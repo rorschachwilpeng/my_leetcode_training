@@ -16,7 +16,7 @@
 - day 10 任务以及具体安排：[第五章 栈与队列part01](https://docs.qq.com/doc/DUElqeHh3cndDbW1Q)
 - day 11 任务以及具体安排：[第五章 栈与队列part02](https://docs.qq.com/doc/DUHh6UE5hUUZOZUd0)
 - day 12 周日休息
-- day 13 任务以及具体安排：[第五章 栈与队列part03](https://docs.qq.com/doc/DUHNpa3F4b2dMUWJ3)
+- day 13 任务以及具体安排：[第六章 二叉树part01](https://docs.qq.com/doc/DUHRtdXZZSWFkeGdE)
 - day 14 任务以及具体安排：[第六章 二叉树part01](https://docs.qq.com/doc/DUHRtdXZZSWFkeGdE)
 - day 15 任务以及具体安排：[第六章 二叉树part02](https://docs.qq.com/doc/DUHN0ZVJuRmVYeWNv)
 - day 16 任务以及具体安排：[第六章 二叉树part03](https://docs.qq.com/doc/DUHBQRm1aSWR4T2NK)
