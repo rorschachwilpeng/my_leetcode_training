@@ -84,3 +84,45 @@ class Solution:
         dfs(root)
         return res
 ```
+
+### 《代码随想录》二叉树：二叉树的层序遍历
+#### 任务要求
+#### 层序遍历
+
+
+看完本篇可以一口气刷十道题，试一试， 层序遍历并不难，大家可以很快刷了十道题。
+
+题目链接/文章讲解/视频讲解：https://programmercarl.com/0102.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86.html
+
+##### 重要知识点
+- BFS模版
+
+**BFS模版**
+```Python 
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+        if not root: 
+            return []
+        
+        que=collections.deque([root])
+        res=[]
+
+        while que:
+            level=[]
+            for i in range(len(que)):
+                cur=que.popleft()
+                level.append(cur.val)
+                
+                if cur.left:
+                    que.append(cur.left)
+                if cur.right:
+                    que.append(cur.right)
+            res.append(level)
+        return res
+```
