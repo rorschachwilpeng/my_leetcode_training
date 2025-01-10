@@ -20,7 +20,7 @@
 - day 14 任务以及具体安排：[第六章 二叉树part01](https://docs.qq.com/doc/DUHRtdXZZSWFkeGdE)
 - day 15 任务以及具体安排：[第六章 二叉树part02](https://docs.qq.com/doc/DUHN0ZVJuRmVYeWNv)
 - day 16 任务以及具体安排：[第六章 二叉树part03](https://docs.qq.com/doc/DUHBQRm1aSWR4T2NK)
-- day 17 任务以及具体安排：[第六章 二叉树part04](https://docs.qq.com/doc/DUFpXY3hBZkpabWFY)
+- day 17 任务以及具体安排：[第六章 二叉树part04](https://docs.qq.com/doc/DUFFiVHl3YVlReVlr)
 - day 18 任务以及具体安排：[第六章 二叉树part05](https://docs.qq.com/doc/DUFFiVHl3YVlReVlr)
 - day 19 周日休息
 - day 20 任务以及具体安排：[第六章 二叉树part06](https://docs.qq.com/doc/DUGFRU2V6Z1F4alBH)
