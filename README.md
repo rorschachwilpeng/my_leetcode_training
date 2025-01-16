@@ -27,8 +27,8 @@
 - day 21 任务以及具体安排：[第六章 二叉树part08](https://docs.qq.com/doc/DUFBUQmxpQU1pa29C)
 - day 22 任务以及具体安排：[第七章 回溯算法part01](https://docs.qq.com/doc/DUEhsb0pUUm1WT2NP)
 - day 23 任务以及具体安排：[第七章 回溯算法part02](https://docs.qq.com/doc/DUExTYXVzU1BiU2Zl)
-- day 24 任务以及具体安排：[第七章 回溯算法part01](https://docs.qq.com/doc/DUEhsb0pUUm1WT2NP)
-- day 25 任务以及具体安排：[第七章 回溯算法part02](https://docs.qq.com/doc/DUExTYXVzU1BiU2Zl)
+- day 24 任务以及具体安排：[第七章 回溯算法part03](https://docs.qq.com/doc/DUElpbnNUR3hIbXlY)
+- day 25 任务以及具体安排：[第七章 回溯算法part04](https://docs.qq.com/doc/DUG1yVHdlWEdNYlhZ)
 - day 26 周日休息
 - day 27 任务以及具体安排：[第七章 回溯算法part03](https://docs.qq.com/doc/DUElpbnNUR3hIbXlY)
 - day 28 任务以及具体安排：[第七章 回溯算法part04](https://docs.qq.com/doc/DUG1yVHdlWEdNYlhZ)
