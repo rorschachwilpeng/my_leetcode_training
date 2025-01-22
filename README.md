@@ -32,8 +32,8 @@
 - day 26 周日休息
 - day 27 任务以及具体安排：[第八章 贪心算法part01](https://docs.qq.com/doc/DUG1PQ1ZZY2xXY1ly)
 - day 28 任务以及具体安排：[第八章 贪心算法part02](https://docs.qq.com/doc/DUGFEdGFWeVhleFF1)
-- day 29 任务以及具体安排：[-](-)
-- day 30 任务以及具体安排：[-](-)
+- day 29 任务以及具体安排：[第八章 贪心算法part03](https://docs.qq.com/doc/DUEh5WFVlQkp1U0p4)
+- day 30 任务以及具体安排：[第八章 贪心算法part04](https://docs.qq.com/doc/DUFRWc3BGRHFXZ1pO)
 - day 31 任务以及具体安排：[第八章 贪心算法part01](https://docs.qq.com/doc/DUG1PQ1ZZY2xXY1ly)
 - day 32 任务以及具体安排：[第八章 贪心算法part02](https://docs.qq.com/doc/DUGFEdGFWeVhleFF1)
 - day 33 周日休息
