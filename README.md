@@ -35,7 +35,7 @@
 - day 29 任务以及具体安排：[第八章 贪心算法part03](https://docs.qq.com/doc/DUEh5WFVlQkp1U0p4)
 - day 30 任务以及具体安排：[第八章 贪心算法part04](https://docs.qq.com/doc/DUFRWc3BGRHFXZ1pO)
 - day 31 任务以及具体安排：[第八章 贪心算法part05](https://docs.qq.com/doc/DUFVRd3p5SHFMSExQ)
-- day 32 任务以及具体安排：[第八章 贪心算法part02](https://docs.qq.com/doc/DUGFEdGFWeVhleFF1)
+- day 32 任务以及具体安排：[第九章 动态算法part01](https://docs.qq.com/doc/DUGNUdVpoT0VJR01l)
 - day 33 周日休息
 - day 34 任务以及具体安排：[第八章 贪心算法part03](https://docs.qq.com/doc/DUEh5WFVlQkp1U0p4)
 - day 35 任务以及具体安排：[第八章 贪心算法part04](https://docs.qq.com/doc/DUFRWc3BGRHFXZ1pO)
