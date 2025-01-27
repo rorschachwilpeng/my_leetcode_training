@@ -37,12 +37,12 @@
 - day 31 任务以及具体安排：[第八章 贪心算法part05](https://docs.qq.com/doc/DUFVRd3p5SHFMSExQ)
 - day 32 任务以及具体安排：[第九章 动态算法part01](https://docs.qq.com/doc/DUGNUdVpoT0VJR01l)
 - day 33 周日休息
-- day 34 任务以及具体安排：[第九章 动态算法part03](https://docs.qq.com/doc/DUFhIUXRFYnVGUkFp)
-- day 35 任务以及具体安排：[第九章 动态算法part04](https://docs.qq.com/doc/DUGdkaEl5dFN1QnBl)
-- day 36 任务以及具体安排：[第九章 动态算法part05](https://docs.qq.com/doc/DUEVMRHZOemN5S2Vm)
-- day 37 任务以及具体安排：[第九章 动态算法part06](https://docs.qq.com/doc/DUHBSRVRUc0Vsck1z)
-- day 38 任务以及具体安排：[第九章 动态算法part07](https://docs.qq.com/doc/DUFVEbWRyZlpjaGty)
-- day 39 任务以及具体安排：[第九章 动态算法part02](https://docs.qq.com/doc/DUE55cVJ5WkNoREhS)
+- day 34 任务以及具体安排：[第九章 动态算法part02](https://docs.qq.com/doc/DUE55cVJ5WkNoREhS)
+- day 35 任务以及具体安排：[第九章 动态算法part03](https://docs.qq.com/doc/DUFhIUXRFYnVGUkFp)
+- day 36 任务以及具体安排：[第九章 动态算法part04](https://docs.qq.com/doc/DUGdkaEl5dFN1QnBl)
+- day 37 任务以及具体安排：[第九章 动态算法part05](https://docs.qq.com/doc/DUEVMRHZOemN5S2Vm)
+- day 38 任务以及具体安排：[第九章 动态算法part06](https://docs.qq.com/doc/DUHBSRVRUc0Vsck1z)
+- day 39 任务以及具体安排：[第九章 动态算法part07](https://docs.qq.com/doc/DUFVEbWRyZlpjaGty)
 - day 40 周日休息
 - day 41 任务以及具体安排：[第九章 动态算法part03](https://docs.qq.com/doc/DUFhIUXRFYnVGUkFp)
 - day 42 任务以及具体安排：[第九章 动态算法part04](https://docs.qq.com/doc/DUGdkaEl5dFN1QnBl)
