@@ -53,6 +53,7 @@ class Solution:
             return True
         return False
 ```
+
 ### [《代码随想录》动态规划：最后一块石头的重量II](https://notes.kamacoder.com/questions/502072)
 #### 任务要求
 #### 1049. 最后一块石头的重量 II
