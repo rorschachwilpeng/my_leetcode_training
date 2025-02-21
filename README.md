@@ -54,8 +54,8 @@
 - day 48 任务以及具体安排：[第十章 单调栈part02](https://docs.qq.com/doc/DUHhnTHZUSGpHZ0Z2)
 - day 49 任务以及具体安排：[第十一章 图论part1](https://docs.qq.com/doc/DUFBYZU9NV2ZjUWd5)
 - day 50 任务以及具体安排：[第十一章 图论part2](https://docs.qq.com/doc/DUFlHd2xtZ0dDc0Rl)
-- day 51 任务以及具体安排：[第十一章 图论part2](https://docs.qq.com/doc/DUFlHd2xtZ0dDc0Rl)
-- day 52 任务以及具体安排：[第九章 动态算法part13](https://docs.qq.com/doc/DUFJzanBWVXNVWW1N)
+- day 51 任务以及具体安排：[第十一章 图论part3](https://docs.qq.com/doc/DUGxNbmFOVnd2SElD)
+- day 52 任务以及具体安排：[第十一章 图论part4](https://docs.qq.com/doc/DUGlaT3BkdWh0SGdL)
 - day 53 任务以及具体安排：[第九章 动态算法part14](https://docs.qq.com/doc/DUEVBcnBldHBKWk12)
 - day 54 周日休息
 - day 55 任务以及具体安排：[第九章 动态算法part15](https://docs.qq.com/doc/DUGtwYWlEZVZSVXdF)
