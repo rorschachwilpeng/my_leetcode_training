@@ -1,8 +1,8 @@
 # 代码随想录
 
-## 总结篇
-### [学习《代码随想录》的总结](https://notes.kamacoder.com/questions/502144)
-#### 任务要求
+## 大厂真题
+### [阿里](https://notes.kamacoder.com/questions/502144)
+#### 大厂真题
 #### 2024年4月8日：阿里云 - 第2题：塔子哥跳格子
 
 https://codefun2000.com/p/P1808
