@@ -233,16 +233,18 @@ https://codefun2000.com/p/P2653
 
 
 2. **助力处理**
- 对于输入是订单的情况，我们直接将数据存到容器中，对应的代码是
+
+    对于输入是订单的情况，我们直接将数据存到容器中，对应的代码是：
+
     ```Python
-            if len(tokens)==4:#订单处理
-                uid=tokens[0]#UID
-                #token[1]代表标记，可以忽略
-                orderID=tokens[2]#订单号
-                ticket=int(tokens[3])#订了几张票
-                newOrder=Order(uid, orderID, ticket, globalIndex)
-                orders.append(newOrder)
-                orderIndexMap[orderID]=len(orders)-1#记录当前队列中的位置(即当前列表的最后位置)
+        if len(tokens)==4:#订单处理
+            uid=tokens[0]#UID
+            #token[1]代表标记，可以忽略
+            orderID=tokens[2]#订单号
+            ticket=int(tokens[3])#订了几张票
+            newOrder=Order(uid, orderID, ticket, globalIndex)
+            orders.append(newOrder)
+            orderIndexMap[orderID]=len(orders)-1#记录当前队列中的位置(即当前列表的最后位置)
     ```
 
     对于输入是助力请求的情况，我们记录下数据，并判断该请求的合法性，对应代码是：
