@@ -218,6 +218,7 @@ https://codefun2000.com/p/P2653
 可以将整道题的任务拆解成三个子任务：1. 订单入队；2.助力处理；3.票务分配
 
 1. **订单入队**
+
     创建一个Orders类来维护订单的信息，类中的各个变量含义：      
 
     - self.uid=uid #输入的第一个元素，用户的唯一标识
@@ -286,30 +287,29 @@ https://codefun2000.com/p/P2653
             #更新交换后两个订单的映射关系-->why?
             orderIndexMap[orders[pos].orderID]=pos
             orderIndexMap[orders[posPrev].orderID]=posPrev
-```
+    ```
 
 3. **票务分配**
-
 创建一个元素值为布尔类型的数组，代表所有的订单所对应的订票状态。遍历数组并分配总票数，能够分配到票的元素标记为True，否则为False。输出时候根据布尔数组的值来决定订单抢票为“success”还是"failure"。
 
-```Python
-    ##票数分配:按照最终余票来分配
-    remaining=tottalTickets
-    isSuccess=[]#存储每个订单是否订票成功
+    ```Python
+        ##票数分配:按照最终余票来分配
+        remaining=tottalTickets
+        isSuccess=[]#存储每个订单是否订票成功
 
-    #录入信息
-    for order in orders:
-        if order.ticket<=remaining:
-            isSuccess.append(True)
-            remaining-=order.ticket
-        else:
-            isSuccess.append(False)
-    
-    #输出信息
-    for i in range(len(orders)):
-        result="success" if isSuccess[i] else "failure"
-        print(f"{orders[i].uid} {orders[i].orderID} {orders[i].ticket}
-```
+        #录入信息
+        for order in orders:
+            if order.ticket<=remaining:
+                isSuccess.append(True)
+                remaining-=order.ticket
+            else:
+                isSuccess.append(False)
+        
+        #输出信息
+        for i in range(len(orders)):
+            result="success" if isSuccess[i] else "failure"
+            print(f"{orders[i].uid} {orders[i].orderID} {orders[i].ticket}
+    ```
 
 
 **代码实现**
