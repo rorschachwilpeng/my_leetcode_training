@@ -2,6 +2,33 @@
 ## 拼多多
 ### [2025年3月09日](https://codefun2000.com/p/P2673)
 #### 任务要求
+#### 拼多多-2025年3月09日-算法岗位-传送门游戏
+https://codefun2000.com/p/P2672
+
+##### 重要知识点
+- 代码实现
+
+**代码实现**
+
+```Python
+#利用贪心的思想，距离初始位置的最大值即正负值的绝对值之和
+
+n=int(input())
+arr=list(map(int,input().strip().split()))
+
+#将数组中的正负进行分类
+res=0
+for item in arr:
+    if item>=0:#正数
+        res+=item
+    else:#负数
+        res+=(-item)
+print(res)
+```
+
+
+### [2025年3月09日](https://codefun2000.com/p/P2673)
+#### 任务要求
 #### 拼多多-2025年3月09日-算法岗位-传送门游戏2
 
 https://codefun2000.com/p/P2673
