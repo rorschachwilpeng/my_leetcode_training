@@ -64,6 +64,8 @@ class Solution:
 ThreeSum, FourSum
 
 
+---
+
 ## Blind75：#128 最长连续序列
 ### #128 最长连续序列
 #### 任务要求
@@ -121,6 +123,8 @@ class Solution:
 
 
 
+----
+
 ## Blind75：#3. 无重复字符的最长子串
 ### #3 无重复字符的最长子串
 #### 任务要求
@@ -163,5 +167,92 @@ class Solution:
 **暴露的问题**
 1. 对于set的使用理解不够透彻，set除了去重以外，还能降低“增加元素”和“删除元素”的时间复杂度；
 
+
+
+
+---
+
+
+## Blind75：#261. 以图判树
+### #261. 以图判树
+#### 任务要求
+https://leetcode.cn/problems/graph-valid-tree/
+##### 重要知识点
+- 考查知识点
+- 解法
+- 暴露的问题
+- 衍生题目
+
+**考查知识点**
+1. 选择哪种数据结构来存储图；
+    这里选用邻接图最好；另外两个可能的选择包括邻接矩阵和链表。邻接矩阵通常在边的数量远大于节点数量时候才用。ChatGPT说LeetCode上大部分的题目都是利用邻接表来解决，fine。
+
+2. 树的合法性的判断条件：
+    官方说的是两个条件，但是我个人觉得用三个条件来描述更加准确：
+    2.1. 边的数量 == 节点数量 - 1
+    2.2. 没有环
+    2.3. 整颗树是可达的，即可以从头到尾遍历访问所有的节点
+    
+3. 如何构建递归来遍历整颗树
+    这是本题的难点，因为本题中构建的是无向图，所以我们在单次遍历逻辑中需要对父子节点之间的双向连接（平凡环）情况做特殊处理
+    
+    递归的伪代码逻辑如下：
+    ```Python
+    def dfs(node, parent):#入参是当前节点与父节点
+        #是否遍历过当前节点
+            #遍历过的话直接跳过
+        #否则将节点加入到seen（遍历过的元素的集合）
+        
+        #遍历当前节点的邻居
+            #跳过父子节点之间的平凡环
+            #如果有非平凡环的话，返回False
+            #继续向下递归 -- dfs(neighbour, node)
+        return True#遍历到底的话，说明可达性是ok的，递归向上返回结果
+    ```
+
+**解法**
+
+```Python
+class Solution:
+    def validTree(self, n: int, edges: List[List[int]]) -> bool:
+        #判断树合法性的两个条件
+            #1.没有环
+            #2.边的数量==节点数量-1
+            #3.树是连通的，遍历的话可以从头到尾
+
+        #首先判断边
+        if len(edges)!=n-1:return False
+
+        #构建邻接图
+        graph=[[] for _ in range(n)]
+        for a,b in edges:
+            graph[a].append(b)
+            graph[b].append(a)
+
+        seen=set()
+
+        def dfs(node,parent):#入参：当前节点与父节点
+            if node in seen: return#跳过已经遍历过的节点
+            seen.add(node)#将当前节点加入seen
+            
+            #遍历当前节点的邻居节点
+            for neighbour in graph[node]:
+                if neighbour==parent:#如果邻居节点和父节点之间存在平凡环
+                    continue#跳过
+                if neighbour in seen:#如果邻居节点已经在seen中出现过了
+                    return False#这是一个环，返回False
+                #继续向下递归遍历
+                ressult=dfs(neighbour,node)
+                if not ressult:return False
+            return True
+        
+        #如果到底+无环的话
+        return dfs(0,-1) and len(seen)==n
+        
+
+```
+
+**暴露的问题**
+1. 图论还够得刷呢，对于dij我也还没学呢，这道题还可以用并查集来做，迭代法也没掌握。。。明天继续深挖这道题
 
 
