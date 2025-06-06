@@ -256,3 +256,97 @@ class Solution:
 1. 图论还够得刷呢，对于dij我也还没学呢，这道题还可以用并查集来做，迭代法也没掌握。。。明天继续深挖这道题
 
 
+
+
+## Blind75：#647. 回文子串
+### #647. 回文子串
+#### 任务要求
+https://leetcode.cn/problems/palindromic-substrings/description/
+##### 重要知识点
+- 考查知识点
+- 解法
+
+**考查知识点**
+1. 中心拓展法
+
+解本题的时候第一想法是利用滑动窗口来解决，但是滑动窗口存在边界难以定义的总是容易出现越界的情况。更优的解法是利用中心拓展法，遍历每个字符，以所遍历的字符为中心向两边所拓展，如果两边拓展的元素相同的话即找到一个回文子串。与此同时，需要将情况划分为子串长度为偶数和奇数的情况进行操作。
+
+
+
+2. 动态规划法
+按照动规5步曲来做：
+- dp数组的下标以及含义：dp[i][j] -- 从索引i到j所构成的子串是否为回文串
+- 递推公式 -- dp[i][j]=dp[i+1][j-1]
+- 初始化 -- 对角线上的值统一初始化为True
+- 遍历顺序 -- 从下往上，从右往左
+- 遍历dp数组
+
+**解法**
+- 中心拓展法
+    ```Python
+    ##中心拓展法
+    class Solution:
+        def countSubstrings(self, s: str) -> int:
+            #特殊情况判断
+            if not s:
+                return 0
+            size=len(s)
+            if size==1:
+                return 1
+            
+            def expand(l,r):
+                count=0
+                while l>=0 and r<len(s) and s[l]==s[r]:
+                    l-=1
+                    r+=1
+                    count+=1
+                return count
+
+            result=0
+            for i in range(size):
+                result1=expand(i,i)
+                result2=expand(i,i+1)
+                result=result1+result2+result
+            return result 
+    ```
+
+
+- 动态规划法
+    ```Python
+    ##动态规划法
+    class Solution:
+        def countSubstrings(self, s: str) -> int:
+            #dp数组的下标以及含义：dp[i][j]:从索引i到j所构成的子串是否为回文串
+            #递推公式:dp[i][j]=dp[i+1][j-1]
+            #初始化:对角线上的值统一初始化为True
+            #遍历顺序:从下往上，从右往左
+            #打印dp数组
+
+            size=len(s)
+            result=0
+            #特殊情况判断
+            if not s:
+                return result
+            if size==1:
+                return 1
+            
+            #初始化
+            dp=[[False]*size for _ in range(size)]
+            for i in range(size):
+                dp[i][i]=True
+            
+            #遍历
+            #Q:先遍历哪个维度？-->从右往左，从下到上
+            for i in range(size-1,-1,-1):#从右往左
+                for j in range(i,size):#从下到上
+                    if s[i]==s[j]:
+                        if j-i<=2:#需要对短的字符进行特殊处理和判断
+                            dp[i][j]=True
+                        else:
+                            dp[i][j]=dp[i+1][j-1]
+                    if dp[i][j]:
+                        result+=1
+            return result
+    ```
+
+
